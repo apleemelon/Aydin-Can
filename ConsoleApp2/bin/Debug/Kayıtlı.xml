@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE nmaprun []>
+<?xml-stylesheet href="file:///C:/Program Files (x86)/Nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Fri Apr 03 22:33:36 2020 as: nmap -oX C:\\Users\\HP\\source\\repos\\ConsoleApp2\\ConsoleApp2\\bin\\Debug\\Ports.xml -&#45;top-ports 20 192.168.1.103 -->
+<nmaprun scanner="nmap" args="nmap -oX C:\\Users\\HP\\source\\repos\\ConsoleApp2\\ConsoleApp2\\bin\\Debug\\Ports.xml --top-ports 20 192.168.1.103" start="1585942416" startstr="Fri Apr 03 22:33:36 2020" version="7.80" xmloutputversion="1.04">
+  <scaninfo type="syn" protocol="tcp" numservices="20" services="21-23,25,53,80,110-111,135,139,143,443,445,993,995,1723,3306,3389,5900,8080" />
+  <verbose level="0" />
+  <debugging level="0" />
+  <host starttime="1585942417" endtime="1585942417">
+    <status state="up" reason="localhost-response" reason_ttl="0" />
+    <address addr="192.168.1.103" addrtype="ipv4" />
+    <hostnames></hostnames>
+    <ports>
+      <port protocol="tcp" portid="21">
+        <state state="closed" reason="reset" reason_ttl="128" />
+        <service name="ftp" method="table" conf="3" />
+      </port>
+      <port protocol="tcp" portid="22">
+        <state state="closed" reason="reset" reason_ttl="128" />
+        <service name="ssh" method="table" conf="3" />
+      </port>
+      <port protocol="tcp" portid="23">
+        <state state="closed" reason="reset" reason_ttl="128" />
+        <service name="telnet" method="table" conf="3" />
+      </port>
+      <port protocol="tcp" portid="25">
+        <state state="closed" reason="reset" reason_ttl="128" />
+        <service name="smtp" method="table" conf="3" />
+      </port>
+      <port protocol="tcp" portid="53">
+        <state state="closed" reason="reset" reason_ttl="128" />
+        <service name="domain" method="table" conf="3" />
+      </port>
+      <port protocol="tcp" portid="80">
+        <state state="closed" reason="reset" reason_ttl="128" />
+        <service name="http" method="table" conf="3" />
+      </port>
+      <port protocol="tcp" portid="110">
+        <state state="closed" reason="reset" reason_ttl="128" />
+        <service name="pop3" method="table" conf="3" />
+      </port>
+      <port protocol="tcp" portid="111">
+        <state state="closed" reason="reset" reason_ttl="128" />
+        <service name="rpcbind" method="table" conf="3" />
+      </port>
+      <port protocol="tcp" portid="135">
+        <state state="open" reason="syn-ack" reason_ttl="128" />
+        <service name="msrpc" method="table" conf="3" />
+      </port>
+      <port protocol="tcp" portid="139">
+        <state state="open" reason="syn-ack" reason_ttl="128" />
+        <service name="netbios-ssn" method="table" conf="3" />
+      </port>
+      <port protocol="tcp" portid="143">
+        <state state="closed" reason="reset" reason_ttl="128" />
+        <service name="imap" method="table" conf="3" />
+      </port>
+      <port protocol="tcp" portid="443">
+        <state state="closed" reason="reset" reason_ttl="128" />
+        <service name="https" method="table" conf="3" />
+      </port>
+      <port protocol="tcp" portid="445">
+        <state state="open" reason="syn-ack" reason_ttl="128" />
+        <service name="microsoft-ds" method="table" conf="3" />
+      </port>
+      <port protocol="tcp" portid="993">
+        <state state="closed" reason="reset" reason_ttl="128" />
+        <service name="imaps" method="table" conf="3" />
+      </port>
+      <port protocol="tcp" portid="995">
+        <state state="closed" reason="reset" reason_ttl="128" />
+        <service name="pop3s" method="table" conf="3" />
+      </port>
+      <port protocol="tcp" portid="1723">
+        <state state="closed" reason="reset" reason_ttl="128" />
+        <service name="pptp" method="table" conf="3" />
+      </port>
+      <port protocol="tcp" portid="3306">
+        <state state="closed" reason="reset" reason_ttl="128" />
+        <service name="mysql" method="table" conf="3" />
+      </port>
+      <port protocol="tcp" portid="3389">
+        <state state="closed" reason="reset" reason_ttl="128" />
+        <service name="ms-wbt-server" method="table" conf="3" />
+      </port>
+      <port protocol="tcp" portid="5900">
+        <state state="closed" reason="reset" reason_ttl="128" />
+        <service name="vnc" method="table" conf="3" />
+      </port>
+      <port protocol="tcp" portid="8080">
+        <state state="closed" reason="reset" reason_ttl="128" />
+        <service name="http-proxy" method="table" conf="3" />
+      </port>
+    </ports>
+    <times srtt="810" rttvar="355" to="100000" />
+  </host>
+  <runstats>
+    <finished time="1585942417" timestr="Fri Apr 03 22:33:37 2020" elapsed="0.75" summary="Nmap done at Fri Apr 03 22:33:37 2020; 1 IP address (1 host up) scanned in 0.75 seconds" exit="success" />
+    <hosts up="1" down="0" total="1" />
+  </runstats>
+</nmaprun>
